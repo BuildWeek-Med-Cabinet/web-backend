@@ -37,7 +37,7 @@ router.post('/', authentication, async (req, res) => {
             if (results) {
                 return res.status(200).json({ message: 'successfully added new strain!'})}
             }
-        res.status(400).json({ message: 'Error adding strain' })
+        res.status(400).json({ message: 'Error adding new strain' })
     } catch(e) {
         res.status(500).json({ message: 'There was a request error' })
     }
